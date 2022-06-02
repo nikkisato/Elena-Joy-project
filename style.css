@@ -265,6 +265,72 @@ nav {
   text-align: center;
 }
 
+/* Contact Section */
+.contact {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact img {
+  flex: 1 1 40rem;
+}
+.form-wrapper {
+  flex: 3 1 40rem;
+}
+
+.form-wrapper h2 {
+  margin: 5rem 0rem;
+}
+
+.form-wrapper span {
+  font-size: var(--big);
+  color: var(--special-color);
+}
+
+.form-wrapper label {
+  display: block;
+}
+
+.form-wrapper input {
+  display: block;
+  margin: 3rem 0rem;
+  background: var(--background-color);
+  color: white;
+  border: none;
+  padding: 1rem;
+}
+
+.form-wrapper button {
+  padding: 1rem 8rem;
+  background: var(--special-color);
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+/* footer */
+footer {
+  background: var(--background-color);
+  color: white;
+  display: flex;
+  padding: 3rem 5%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer h4 {
+  flex: 3 1 40rem;
+  font-size: calc(1.4rem + 1vw);
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 40rem;
+  align-items: center;
+}
+
 @media screen and (max-width: 842px) {
   .hero {
     width: 100%;
@@ -356,5 +422,31 @@ nav {
 
   .gallery-head {
     display: none;
+  }
+
+  /* Contact Section */
+  .contact img {
+    display: none;
+  }
+
+  /* Footer */
+  footer ul {
+    padding: 2rem 0rem;
+    order: 1;
+  }
+
+  footer h4 {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  html {
+    --header1: 3rem;
+    --header2: 4.5rem;
+    --header3: 3.5rem;
+    --header4: 2.5rem;
+    --text: 3rem;
+    --big: 8rem;
   }
 }
